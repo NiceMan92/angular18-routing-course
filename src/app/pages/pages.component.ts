@@ -1,15 +1,14 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-pages',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-pages',
+    imports: [],
+    template: `
     <p>
       page: {{ pageId()}} limit: {{limits()}} {{page().name}}
     </p>
   `,
-  styles: ``
+    styles: ``
 })
 export default class PagesComponent {
 

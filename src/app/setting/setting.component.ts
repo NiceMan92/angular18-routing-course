@@ -2,17 +2,16 @@ import { Component, computed, effect, signal, untracked } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-setting',
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `
+    selector: 'app-setting',
+    imports: [RouterOutlet],
+    template: `
     <p>
       setting works!
       {{ double() }}
       <router-outlet />
     </p>
   `,
-  styles: ``
+    styles: ``
 })
 export default class SettingComponent {
 

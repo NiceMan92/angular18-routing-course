@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-profile',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-profile',
+    imports: [],
+    template: `
     <p>
       profile works!
     </p>
   `,
-  styles: ``
+    styles: ``
 })
 export default class ProfileComponent {
 

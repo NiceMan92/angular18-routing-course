@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
-  template: `
+    selector: 'app-root',
+    imports: [RouterOutlet, RouterLink, RouterLinkActive],
+    template: `
     <h1>Welcome to {{title}}!</h1>
     <a routerLink='/home' routerLinkActive="active">home</a>
     <a routerLink='/product' routerLinkActive="active">products</a>
@@ -13,7 +12,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     <a routerLink='/setting/profile' routerLinkActive="active">profile</a>
     <router-outlet />
   `,
-  styles: `
+    styles: `
   a{
     margin-left: 10px;
   }
@@ -21,7 +20,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       color: red;
 
     }
-  `,
+  `
 })
 export class AppComponent {
   title = 'angular18-routing-course';

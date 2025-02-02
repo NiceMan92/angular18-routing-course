@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-not-found',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-not-found',
+    imports: [],
+    template: `
     <p>
       not-found path !
     </p>
   `,
-  styles: ``
+    styles: ``
 })
 export class NotFoundComponent {
 

@@ -2,17 +2,16 @@ import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-home',
+    imports: [],
+    template: `
     <p>
       home works!
       <button (click)="gotoProduct()">Go to product</button>
       <button (click)="gotoProfile()">Go to profile</button>
     </p>
   `,
-  styles: ``
+    styles: ``
 })
 export default class HomeComponent {
 gotoProfile() {
